@@ -19,7 +19,7 @@
     "scrollreveal": "^4.0.9",
     "styled-components": "^5.3.5",
     "styled-system": "^5.1.5",
-    "swiper": "^8.3.2"
+    "swiper": "^8.4.4"
   },
   "devDependencies": {
     "@types/axios": "^0.14.0",

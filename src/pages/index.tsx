@@ -2,7 +2,7 @@ import * as Styled from "../styles/pages/Home/styles";
 import { useState, useEffect } from "react";
 import type { NextPage } from "next";
 import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
-import { Navigation, Pagination } from "swiper";
+import SwiperCore, { Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { api } from "../api/Api";
 import "swiper/css";
@@ -22,6 +22,7 @@ const Home: NextPage = () => {
   const firstSection = useRef<HTMLDivElement>(null);
   const secondSection = useRef<HTMLDivElement>(null);
   const thirdSection = useRef<HTMLDivElement>(null);
+  SwiperCore.use([Navigation])
 
   useEffect(() => {
     const fetchData = async () => {

@@ -4,7 +4,7 @@ import { Product } from "../../interfaces/Product";
 import * as Styled from "../../styles/pages/Products/product";
 import { FiArrowLeft, FiArrowRight, FiMinus, FiPlus } from "react-icons/fi";
 import { BiCartAlt } from "react-icons/bi";
-import { Navigation, Pagination } from "swiper";
+import SwiperCore , { Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useEffect, useState, useRef, useContext } from "react";
 
@@ -24,6 +24,7 @@ const ProductPage = () => {
   const container = useRef<HTMLDivElement>(null);
   const router = useRouter();
   const { id } = router.query;
+  SwiperCore.use([Navigation])
 
   useEffect(() => {
     const fecthProduct = async () => {
