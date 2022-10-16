@@ -2,8 +2,8 @@ import * as Styled from "../styles/pages/Home/styles";
 import { useState, useEffect } from "react";
 import type { NextPage } from "next";
 import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
-import SwiperCore, { Navigation, Pagination } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
+import Swiper, { Navigation, Pagination } from "swiper";
+import { Swiper as SwiperV1, SwiperSlide } from "swiper/react";
 import { api } from "../api/Api";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -22,7 +22,7 @@ const Home: NextPage = () => {
   const firstSection = useRef<HTMLDivElement>(null);
   const secondSection = useRef<HTMLDivElement>(null);
   const thirdSection = useRef<HTMLDivElement>(null);
-  SwiperCore.use([Navigation])
+  Swiper.use([Navigation, Pagination]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -77,7 +77,7 @@ const Home: NextPage = () => {
         <button className="prev" ref={prevRef}>
           <FiArrowLeft />
         </button>
-        <Swiper
+        <SwiperV1
           modules={[Navigation, Pagination]}
           spaceBetween={50}
           slidesPerView={1}
@@ -116,7 +116,7 @@ const Home: NextPage = () => {
               <img src="/images/products/slider2.jpg" alt="arara-com-roupas" />
             </Styled.SliderImages>
           </SwiperSlide>
-        </Swiper>
+        </SwiperV1>
         <button className="next" ref={nextRef}>
           <FiArrowRight />
         </button>
@@ -131,7 +131,7 @@ const Home: NextPage = () => {
           <Link href="/products">Ver mais</Link>
         </header>
         <div className="box-slider">
-          <Swiper
+          <SwiperV1
             modules={[Navigation]}
             slidesPerView={4}
             breakpoints={{
@@ -161,7 +161,7 @@ const Home: NextPage = () => {
                   </SwiperSlide>
                 );
               })}
-          </Swiper>
+          </SwiperV1>
         </div>
       </Styled.ThirdSection>
     </Styled.Container>

@@ -4,8 +4,8 @@ import { Product } from "../../interfaces/Product";
 import * as Styled from "../../styles/pages/Products/product";
 import { FiArrowLeft, FiArrowRight, FiMinus, FiPlus } from "react-icons/fi";
 import { BiCartAlt } from "react-icons/bi";
-import SwiperCore , { Navigation, Pagination } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
+import Swiper, { Navigation, Pagination } from "swiper";
+import { Swiper as SwiperV1, SwiperSlide } from "swiper/react";
 import { useEffect, useState, useRef, useContext } from "react";
 
 import "swiper/css";
@@ -24,7 +24,7 @@ const ProductPage = () => {
   const container = useRef<HTMLDivElement>(null);
   const router = useRouter();
   const { id } = router.query;
-  SwiperCore.use([Navigation])
+  Swiper.use([Navigation, Pagination]);
 
   useEffect(() => {
     const fecthProduct = async () => {
@@ -78,7 +78,7 @@ const ProductPage = () => {
                 <button className="prev" ref={prevRef}>
                   <FiArrowLeft />
                 </button>
-                <Swiper
+                <SwiperV1
                   resizeObserver={false}
                   modules={[Navigation, Pagination]}
                   spaceBetween={50}
@@ -98,7 +98,7 @@ const ProductPage = () => {
                         </Styled.SliderImages>
                       </SwiperSlide>
                     ))}
-                </Swiper>
+                </SwiperV1>
                 <button className="next" ref={nextRef}>
                   <FiArrowRight />
                 </button>
