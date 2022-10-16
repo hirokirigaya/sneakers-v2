@@ -83,6 +83,9 @@ const ProductPage = () => {
                   modules={[Navigation, Pagination]}
                   spaceBetween={50}
                   slidesPerView={1}
+                  observer={true}
+                  observeParents={true}
+                  parallax={true}
                   pagination={{ clickable: true }}
                   scrollbar={{ draggable: true }}
                   navigation={{

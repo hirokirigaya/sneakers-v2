@@ -83,6 +83,9 @@ const Home: NextPage = () => {
           slidesPerView={1}
           pagination={{ clickable: true }}
           scrollbar={{ draggable: true }}
+          observer={true}
+          observeParents={true}
+          parallax={true}
           navigation={{
             prevEl: prevRef.current,
             nextEl: nextRef.current,
