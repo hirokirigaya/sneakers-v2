@@ -4,6 +4,8 @@ import { ContainerLayout } from '../components/layout'
 import { CartProvider } from '../services/useProduct'
 import GlobalStyle from '../styles/GlobalStyle'
 import { theme } from '../styles/variables'
+import Swiper, { Navigation, Pagination } from 'swiper';
+Swiper.use([Navigation, Pagination]);
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
