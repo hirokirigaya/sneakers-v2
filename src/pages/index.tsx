@@ -87,11 +87,9 @@ const Home: NextPage = () => {
             nextEl: nextRef.current,
           }}
           onBeforeInit={(swiper) => {
-            // eslint-disable-next-line @typescript-eslint/ban-ts-comment
             // @ts-ignore
             // eslint-disable-next-line no-param-reassign
             swiper.params.navigation.prevEl = prevRef.current;
-            // eslint-disable-next-line @typescript-eslint/ban-ts-comment
             // @ts-ignore
             // eslint-disable-next-line no-param-reassign
             swiper.params.navigation.nextEl = nextRef.current;
