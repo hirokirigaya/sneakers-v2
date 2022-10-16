@@ -87,16 +87,16 @@ const Home: NextPage = () => {
           observeParents={true}
           parallax={true}
           navigation={{
-            prevEl: prevRef.current,
-            nextEl: nextRef.current,
+            prevEl: ".prev",
+            nextEl: ".next",
           }}
           onBeforeInit={(swiper) => {
             // @ts-ignore
             // eslint-disable-next-line no-param-reassign
-            swiper.params.navigation.prevEl = prevRef.current;
+            swiper.params.navigation.prevEl = ".prev";
             // @ts-ignore
             // eslint-disable-next-line no-param-reassign
-            swiper.params.navigation.nextEl = nextRef.current;
+            swiper.params.navigation.nextEl = ".next";
           }}
         >
           <SwiperSlide>

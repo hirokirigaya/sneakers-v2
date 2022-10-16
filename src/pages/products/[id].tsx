@@ -89,8 +89,8 @@ const ProductPage = () => {
                   pagination={{ clickable: true }}
                   scrollbar={{ draggable: true }}
                   navigation={{
-                    prevEl: prevRef.current,
-                    nextEl: nextRef.current,
+                    prevEl: ".prev",
+                    nextEl: ".next",
                   }}
                 >
                   {product &&
