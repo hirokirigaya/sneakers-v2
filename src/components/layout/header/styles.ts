@@ -84,9 +84,9 @@ export const Navigation = styled.div`
       }
 
       &:hover {
-        border-bottom: 3px solid ${({ theme }) => theme.colors.red[500]};
+        border-bottom: 3px solid ${({ theme }) => theme.colors.blue[500]};
         a {
-          color: ${({ theme }) => theme.colors.red[500]};
+          color: ${({ theme }) => theme.colors.blue[500]};
         }
       }
     }

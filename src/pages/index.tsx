@@ -74,7 +74,7 @@ const Home: NextPage = () => {
   return (
     <Styled.Container>
       <Styled.FirstSection ref={firstSection}>
-        <button className="prev" ref={prevRef}>
+        <button className="prev">
           <FiArrowLeft />
         </button>
         <SwiperV1
@@ -120,7 +120,7 @@ const Home: NextPage = () => {
             </Styled.SliderImages>
           </SwiperSlide>
         </SwiperV1>
-        <button className="next" ref={nextRef}>
+        <button className="next">
           <FiArrowRight />
         </button>
       </Styled.FirstSection>

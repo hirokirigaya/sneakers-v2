@@ -13,10 +13,10 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Button } from "../../components/reusable/Button";
 import { cartStore } from "../../services/useProduct";
+import { styles } from "styled-system";
+import { Slider } from "../../components/reusable/Slider";
 
 const ProductPage = () => {
-  const prevRef = useRef<HTMLButtonElement>(null);
-  const nextRef = useRef<HTMLButtonElement>(null);
   const [product, setProduct] = useState<Product>();
   const [productQtd, setProductQtd] = useState(1);
   const [selectedSize, setSelectedSize] = useState<number>();
@@ -74,38 +74,7 @@ const ProductPage = () => {
         <>
           <Styled.FirstSection>
             <div className="box-product">
-              <div className="container-slider">
-                <button className="prev" ref={prevRef}>
-                  <FiArrowLeft />
-                </button>
-                <SwiperV1
-                  resizeObserver={false}
-                  modules={[Navigation, Pagination]}
-                  spaceBetween={50}
-                  slidesPerView={1}
-                  observer={true}
-                  observeParents={true}
-                  parallax={true}
-                  pagination={{ clickable: true }}
-                  scrollbar={{ draggable: true }}
-                  navigation={{
-                    prevEl: ".prev",
-                    nextEl: ".next",
-                  }}
-                >
-                  {product &&
-                    product.images.map((image) => (
-                      <SwiperSlide key={image.id}>
-                        <Styled.SliderImages>
-                          <img src={image.url} alt="produto" />
-                        </Styled.SliderImages>
-                      </SwiperSlide>
-                    ))}
-                </SwiperV1>
-                <button className="next" ref={nextRef}>
-                  <FiArrowRight />
-                </button>
-              </div>
+              <div className="box-slider">{product && <Slider images={product.images} />}</div>
               <Styled.DescribreProduct>
                 <h1>{product.name}</h1>
                 <p className="desc">{product.description}</p>

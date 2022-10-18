@@ -16,47 +16,17 @@ export const FirstSection = styled.section`
     grid-template-columns: 1fr 1fr;
     width: 100%;
 
-    @media (max-width: 768px) {
+    @media (max-width: 1000px) {
       grid-template-columns: 1fr;
     }
 
-    .container-slider {
-      display: flex;
-      align-items: center;
-      max-width: 390px;
+    .box-slider {
+      width: 80%;
       margin: 0 auto;
+      display: flex;
       justify-content: center;
-      position: relative;
-
-      @media (max-width: 414px) {
-        width: 350px;
-      }
-
-      button {
-        position: absolute;
-        z-index: 1;
-        border: none;
-        background: ${({ theme }) => theme.colors.text.primary};
-        border-radius: 99999px;
-        padding: 0.5rem;
-        color: #fff;
-        display: flex;
-        align-items: center;
-
-        svg {
-          font-size: ${({ theme }) => theme.fontSizes.lg};
-        }
-      }
-
-      .next {
-        right: 10px;
-        z-index: 2;
-      }
-
-      .prev {
-        left: 10px;
-        z-index: 2;
-      }
+      align-items: center;
+      min-height: 370px;
     }
   }
 `;
@@ -80,7 +50,7 @@ export const DescribreProduct = styled.div`
   width: 100%;
   gap: 2rem;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
     align-items: center;
     text-align: center;
   }
@@ -162,13 +132,10 @@ export const SecondSection = styled.section`
   }
 `;
 
-
 export const Sizes = styled.div`
   display: flex;
   gap: 1rem;
 `;
-
-
 
 export const Size = styled.button`
   padding: 0.5rem;
