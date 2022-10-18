@@ -15,9 +15,7 @@ const Slider = ({ images }: SliderProps): JSX.Element => {
 
   useLayoutEffect(() => {
     setSliderImages(document.querySelectorAll(".slide"));
-    console.log(sliderImages);
   }, [images]);
-  console.log(sliderImages);
 
   const removeClassOn = () => {
     sliderImages!.forEach((slide) => {
@@ -65,8 +63,6 @@ const Slider = ({ images }: SliderProps): JSX.Element => {
       })}
       <div className="dots">
         {images.map((image, i) => {
-          console.log(currentSlider);
-
           return (
             <span
               key={image.id}
