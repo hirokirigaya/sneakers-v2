@@ -95,7 +95,7 @@ const navLinks = [
   {
     id: 3,
     title: "Sobre",
-    path: "/",
+    path: "/about",
   },
 ];
 export { Header };
