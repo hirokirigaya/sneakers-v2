@@ -3,7 +3,7 @@ import products from "../../../mock/products.json";
 import nc from "next-connect";
 
 const handler = nc<NextApiRequest, NextApiResponse>().get((req, res) => {
-  res.json(products);
+  res.status(200).json(products);
 });
 
 export default handler;

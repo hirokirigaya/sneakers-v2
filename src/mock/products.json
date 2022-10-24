@@ -4,11 +4,13 @@
     "name": "PEAGSUS FLYEASE",
     "description": "The Peagasus FlyEase é um novo clássico nike Air 1. O design é inspirado no Air Force 1, mas com um novo sistema de fecho FlyEase. O sistema de fecho FlyEase permite que você coloque e remova o tênis com facilidade, sem precisar amarrar ou desamarrar as cordas. O tênis é feito de couro e camurça e tem uma sola de borracha.",
     "sumary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus aliquam, est nemo doloribus, et voluptates libero  labore, ab quod iusto quis qui cumque possimus. Minus velit provident possimus! Aliquid, tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati et neque, enim accusamus nemo expedita. Veniam autem accusamus quaerat officia minus aliquam ad, sunt eius voluptatibus accusantium dicta, unde voluptates!",
-    "price": 125.90,
-    "oldPrice": 250.90,
+    "price": 125.9,
+    "oldPrice": 250.9,
     "countInStock": 5,
     "slug": "pegasus-flyease",
     "sizes": [34, 35, 36, 37, 38],
+    "category": "esporte",
+    "genre": "femenino",
     "images": [
       {
         "id": 1,
@@ -26,18 +28,20 @@
         "id": 4,
         "url": "/images/products/pegasus-4.webp"
       }
-    ] 
+    ]
   },
   {
     "id": 2,
     "name": "PEAGSUS FLYEASE MASCULINO",
     "description": "The Peagasus FlyEase é um novo clássico nike Air 1. O design é inspirado no Air Force 1, mas com um novo sistema de fecho FlyEase. O sistema de fecho FlyEase permite que você coloque e remova o tênis com facilidade, sem precisar amarrar ou desamarrar as cordas. O tênis é feito de couro e camurça e tem uma sola de borracha.",
     "sumary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus aliquam, est nemo doloribus, et voluptates libero  labore, ab quod iusto quis qui cumque possimus. Minus velit provident possimus! Aliquid, tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati et neque, enim accusamus nemo expedita. Veniam autem accusamus quaerat officia minus aliquam ad, sunt eius voluptatibus accusantium dicta, unde voluptates!",
-    "price": 129.90,
-    "oldPrice": 299.90,
+    "price": 129.9,
+    "oldPrice": 299.9,
     "countInStock": 2,
     "slug": "pegasus-flyease-man",
     "sizes": [39, 40, 41, 42],
+    "category": "esporte",
+    "genre": "masculino",
     "images": [
       {
         "id": 1,
@@ -55,18 +59,20 @@
         "id": 4,
         "url": "/images/products/pegasus-man-4.webp"
       }
-    ] 
+    ]
   },
   {
     "id": 3,
     "name": "AIR FORCE INFANTIL",
     "description": "O Air Force é um tênis casual que combina com qualquer look. O tênis é feito de couro e camurça e tem uma sola de borracha.",
     "sumary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus aliquam, est nemo doloribus, et voluptates libero  labore, ab quod iusto quis qui cumque possimus. Minus velit provident possimus! Aliquid, tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati et neque, enim accusamus nemo expedita. Veniam autem accusamus quaerat officia minus aliquam ad, sunt eius voluptatibus accusantium dicta, unde voluptates!",
-    "price": 99.90,
-    "oldPrice": 199.90,
+    "price": 99.9,
+    "oldPrice": 199.9,
     "countInStock": 0,
     "slug": "air-force-infantil",
     "sizes": [28, 30, 31, 31, 32],
+    "category": "casual",
+    "genre": "infantil",
     "images": [
       {
         "id": 1,
@@ -84,18 +90,20 @@
         "id": 4,
         "url": "/images/products/air-force-infantil-4.webp"
       }
-    ] 
+    ]
   },
   {
     "id": 4,
     "name": "RESPONSE RUN",
     "description": "Response run é perfeito para corridas, treinos e caminhadas. O tênis é feito de couro e camurça e tem uma sola de borracha.",
     "sumary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus aliquam, est nemo doloribus, et voluptates libero  labore, ab quod iusto quis qui cumque possimus. Minus velit provident possimus! Aliquid, tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati et neque, enim accusamus nemo expedita. Veniam autem accusamus quaerat officia minus aliquam ad, sunt eius voluptatibus accusantium dicta, unde voluptates!",
-    "price": 249.90,
-    "oldPrice": 499.90,
+    "price": 249.9,
+    "oldPrice": 499.9,
     "countInStock": 7,
     "slug": "response-run",
     "sizes": [39, 40, 41, 42],
+    "category": "esporte",
+    "genre": "masculino",
     "images": [
       {
         "id": 1,
@@ -117,18 +125,20 @@
         "id": 5,
         "url": "/images/products/response-run-5.webp"
       }
-    ] 
+    ]
   },
   {
     "id": 5,
     "name": "TENSAUR RUN",
     "description": "Tensaur run é perfeito para corridas, treinos e caminhadas. O tênis é feito de couro e camurça e tem uma sola de borracha.",
     "sumary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus aliquam, est nemo doloribus, et voluptates libero  labore, ab quod iusto quis qui cumque possimus. Minus velit provident possimus! Aliquid, tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati et neque, enim accusamus nemo expedita. Veniam autem accusamus quaerat officia minus aliquam ad, sunt eius voluptatibus accusantium dicta, unde voluptates!",
-    "price": 89.90,
-    "oldPrice": 179.90,
+    "price": 89.9,
+    "oldPrice": 179.9,
     "countInStock": 33,
     "slug": "tensaur-run",
-    "sizes": [39, 40, 41, 42],
+    "category": "esporte",
+    "sizes": [34, 35, 36, 37, 38],
+    "genre": "femenino",
     "images": [
       {
         "id": 1,
@@ -150,6 +160,6 @@
         "id": 5,
         "url": "/images/products/tensaur-run-5.webp"
       }
-    ] 
+    ]
   }
 ]

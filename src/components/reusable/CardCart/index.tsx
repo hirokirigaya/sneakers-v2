@@ -35,7 +35,7 @@ const CardCart = ({ item }: cardProps) => {
   };
 
   const handleSubValue = (item: any) => {
-    if (item.quant === 0) {
+    if (item.quant === 1) {
       return;
     }
     dispatch({

@@ -120,7 +120,7 @@ export const SettingsContainer = styled.div`
       transition: all 200ms ease-in-out;
 
       &:hover {
-        color: ${({ theme }) => theme.colors.red[500]};
+        color: ${({ theme }) => theme.colors.blue[500]};
       }
     }
   }
@@ -132,7 +132,7 @@ export const SettingsContainer = styled.div`
     cursor: pointer;
 
     &:hover {
-      color: ${({ theme }) => theme.colors.red[500]};
+      color: ${({ theme }) => theme.colors.blue[500]};
     }
   }
 `;

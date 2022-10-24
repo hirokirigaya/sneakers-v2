@@ -6,7 +6,8 @@ const handler = nc<NextApiRequest, NextApiResponse>().get((req, res) => {
   const id = req.query.id
   const product = products.find(product => product.slug === id)
 
-  res.json(product);
+  res.status(200).json(product);
+  
   
 })
 

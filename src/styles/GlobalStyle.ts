@@ -32,7 +32,7 @@ export default createGlobalStyle`
 
   .swiper-button-next:after,
   .swiper-button-prev:after {
-    color: ${({ theme }) => theme.colors.text.secondary};
+    color: ${({ theme }) => theme.colors.blue[500]};
   }
 
   .swiper-button-prev.swiper-button-disabled,

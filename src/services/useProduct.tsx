@@ -16,8 +16,6 @@ interface ContextProps {
   addItemCart: (item: Item) => void;
 }
 
-
-
 type State = {
   cart: {
     cartItems: CartItem[];
@@ -56,11 +54,20 @@ function reducer(state: State, action: Action): State {
 
       const newCartItems = itemExist
         ? state.cart.cartItems.map((item) => {
+            console.log(itemExist.countInStock);
+            console.log(item.quant);
+            if (itemExist.countInStock === item.quant) {
+              return item;
+            }
             if (item.id === action.payload.id) {
-              return {
-                ...item,
-                quant: item.quant && item.quant + action.payload.quant,
-              };
+              if (item.quant && itemExist.countInStock) {
+                if (item.quant < itemExist.countInStock) {
+                  return {
+                    ...item,
+                    quant: item.quant + action.payload.quant,
+                  };
+                }
+              }
             }
             return item;
           })

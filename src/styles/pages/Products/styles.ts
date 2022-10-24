@@ -16,18 +16,25 @@ export const FilterHeader = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  flex-direction: column;
+  gap: 1rem;
 
+  @media (min-width: 768px) {
+    flex-direction: row;
+    gap: 2rem;
+  }
   select {
-      border-radius: 0.5rem;
-      border: 1px solid ${({ theme }) => theme.colors.text.tertiary};
-      padding: 0.5rem;
-    }
-  `;
+    border-radius: 0.5rem;
+    border: 1px solid ${({ theme }) => theme.colors.text.tertiary};
+    padding: 0.5rem;
+    min-width: 110px;
+    text-align: center;
+  }
+`;
 
 export const GridProducts = styled.div`
   display: flex;
-  width: 100%; 
+  width: 100%;
   align-items: center;
   justify-content: center;
 

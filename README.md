@@ -1,34 +1,92 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# SneakersV2
 
-## Getting Started
+This is a second version of one of my first projects as a front end developer, along this journey I was able to improve and refine my skills, and fulfill some dreams, one of them was to create a front end + back end application, and here I bring my first crud along with one of the first sites.
 
-First, run the development server:
+## Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
+---
+
+- [Screenshots](#screenshots)
+- [Links](#links)
+- [The Process](#the-process)
+  - [Build With](#build-with)
+  - [What we have improved](#what-i-improved-and-learned)
+- [How do you clip repository](#how-do-you-clip-repository)
+- [Portuguese Description](#portuguese)
+
+---
+
+### Screenshots
+
+![interface-homepage](https://i.imgur.com/VDsZ6F8.png)
+
+![Interface-homepage](https://i.imgur.com/CHQfReC.png)
+
+![Interface-products](https://i.imgur.com/HbOqNGE.png)
+
+![Interface-product](https://i.imgur.com/u0x3wAg.png)
+
+---
+
+### Links
+
+Page: [Click Me](https://sneakers-v2.vercel.app/) <br>
+Repository: [Click Me](https://github.com/hirokirigaya/sneakers-v2)<br>
+Linkedin: [Click Me](https://www.linkedin.com/in/daniel-junio-0832481bb/) <br>
+
+---
+
+## The process
+
+First I created the interface based on V1 sneakers, soon after the back was created and connected with the front, adding the functionalities
+
+### Build with
+
+- Next JS
+- Node Js
+- Styled Components
+- Flex Box and Grid
+
+### What I Improved and Learned
+
+I took a small step in the back end learning some features.
+
+```js
+const handler = nc<NextApiRequest, NextApiResponse>().get((req, res) => {
+  const id = req.query.id
+  const product = products.find(product => product.slug === id)
+
+  res.json(product);
+
+})
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+### How do you clip repository
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+```
+git clone https://github.com/hirokirigaya/sneakers-v2.git
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+cd sneakers-v2
 
-## Learn More
+npm install or yarn
 
-To learn more about Next.js, take a look at the following resources:
+npm start / yarn run
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+# Portuguese
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Essa é uma segunda versão de um dos meus primeiros projetos como desenvolvedor front end, ao longo dessa caminhada pude melhorar e refinar minhas habilidades, e realizar alguns sonhos, um deles era criar uma aplicação front end + back end, e aqui trago meu primeiro crud junto com um dos primeiros sites.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Meu Progresso
+
+Primeiro criei a interface baseada no sneakers V1, logo após foi feito o back e conectado com o front, adicionando as funcionalidades.
+
+## O que eu aprendi
+
+Dei um pequeno passo no back-end aprendendo alguns recursos.
+
